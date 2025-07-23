@@ -76,3 +76,99 @@ after their bonus. Here is the company's bonus structure:
 bonus.
 Create this `target_comp` column, making sure to format _both_ the `salary` and
 `target_comp` columns nicely (ie, with dollar signs and comma separators).
+
+The Basics
+ 
+
+ 
+1) select *
+from pets
+
+2) select *
+from pets
+LIMIT 5
+
+3) select NAME, AGE
+from pets
+
+4) select *
+from pets
+ORDER BY 4 ASC
+
+5) select *
+from pets
+ORDER BY 1 ASC
+
+6) select *
+from pets
+where sex = 'M'
+
+7) select *
+from pets
+where species = 'cat'
+
+8) select *
+from pets
+where age >=5
+
+9) select distinct name, age
+from pets
+where sex = 'M'
+
+10) select distinct name
+from pets
+where sex = 'M' and age <5
+
+11) select *
+from pets
+where sex = 'M' and species = 'dog' or sex = 'F' and species = 'cat'
+
+12) select *
+from pets
+ORDER BY 4 DESC
+limit 5
+
+13) select distinct name, age
+from pets
+where sex = 'F' and species = 'cat'
+order by age desc 
+
+14) select distinct name
+from pets
+where name like 'P%'
+
+15) select *
+from employees_null
+where salary ISNULL
+or salary <35000
+
+16) select *
+from employees_null
+where salary ISNULL
+
+
+17) select *
+from employees_null
+where salary ISNULL
+	I see 1 employee with a job title missing
+
+18) select *
+from employees
+order by startdate desc 
+Newest employee- Roger Conner
+
+select *
+from employees
+order by startdate asc
+Most senior – Mary Nash
+
+19) select distinct firstname
+from employees
+where firstname like 'Thomas%'
+
+20) select distinct firstname
+from employees
+where firstname like 'Thomas%' or firstname like 'Shannon%'
+
+21) SELECT * FROM employees WHERE job != 'Sales' AND (firstname like 'Robert%' OR firstname like 'Lisa%' OR firstname like 'J%')
+
